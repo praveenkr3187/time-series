@@ -1,0 +1,7 @@
+.venv
+artifacts
+reports
+m5-forecasting
+**/__pycache__
+.pytest_cache
+loc

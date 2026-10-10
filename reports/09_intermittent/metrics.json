@@ -1,0 +1,98 @@
+{
+  "item_level": {
+    "ADIDA": {
+      "RMSSE (backtest)": 0.7404426176714174,
+      "RMSSE (holdout)": 0.7788660059871196,
+      "WAPE (backtest)": 0.74433135356262,
+      "bias (backtest)": -0.006535040295783029
+    },
+    "Croston (classic)": {
+      "RMSSE (backtest)": 0.7600907958695013,
+      "RMSSE (holdout)": 0.783465332767031,
+      "WAPE (backtest)": 0.7897373623719367,
+      "bias (backtest)": 0.038791413537128276
+    },
+    "Croston (optimised)": {
+      "RMSSE (backtest)": 0.7663392246019495,
+      "RMSSE (holdout)": 0.7835450840382121,
+      "WAPE (backtest)": 0.8029429244801501,
+      "bias (backtest)": 0.06297902349526759
+    },
+    "IMAPA": {
+      "RMSSE (backtest)": 0.7422188071527671,
+      "RMSSE (holdout)": 0.7797032811838076,
+      "WAPE (backtest)": 0.746644161685046,
+      "bias (backtest)": -0.0014347581241793556
+    },
+    "SBA": {
+      "RMSSE (backtest)": 0.7563264801932181,
+      "RMSSE (holdout)": 0.7806087034900736,
+      "WAPE (backtest)": 0.7769938384367968,
+      "bias (backtest)": -0.013805668055298315
+    },
+    "Seasonal naive (7)": {
+      "RMSSE (backtest)": 0.9630464960353818,
+      "RMSSE (holdout)": 1.0287703816449634,
+      "WAPE (backtest)": 0.8644415332812893,
+      "bias (backtest)": -0.055126199128060126
+    },
+    "TSB": {
+      "RMSSE (backtest)": 0.7388269604020911,
+      "RMSSE (holdout)": 0.7762403187289649,
+      "WAPE (backtest)": 0.7413301460593092,
+      "bias (backtest)": -0.02449735843790545
+    },
+    "Weekday profile x MA(28)": {
+      "RMSSE (backtest)": 0.7437410439281865,
+      "RMSSE (holdout)": 0.7887267548065836,
+      "WAPE (backtest)": 0.7324111381781866,
+      "bias (backtest)": -0.024718365297474693
+    }
+  },
+  "by_class": {
+    "erratic": {
+      "ADIDA": 0.7059068445088332,
+      "Croston (classic)": 0.6752024202227727,
+      "Croston (optimised)": 0.6975720606067601,
+      "IMAPA": 0.7059068445088332,
+      "SBA": 0.6726284375900417,
+      "SES (alpha per series)": 0.695765171336107,
+      "Seasonal naive (7)": 0.9023790598113697,
+      "TSB": 0.673060947405465,
+      "Weekday profile x MA(28)": 0.6717069247407959
+    },
+    "intermittent": {
+      "ADIDA": 0.7427080176247134,
+      "Croston (classic)": 0.763638094720914,
+      "Croston (optimised)": 0.7673952304161514,
+      "IMAPA": 0.74395431949143,
+      "SBA": 0.7601189673330526,
+      "SES (alpha per series)": 0.7429018238130841,
+      "Seasonal naive (7)": 0.9771630233446019,
+      "TSB": 0.7430975003075067,
+      "Weekday profile x MA(28)": 0.7514818620306274
+    },
+    "lumpy": {
+      "ADIDA": 0.7181801177518993,
+      "Croston (classic)": 0.7289611937455653,
+      "Croston (optimised)": 0.7346299552454102,
+      "IMAPA": 0.7226226329905421,
+      "SBA": 0.7247917810362234,
+      "SES (alpha per series)": 0.7258702238244004,
+      "Seasonal naive (7)": 0.9399980948991863,
+      "TSB": 0.7129779011372709,
+      "Weekday profile x MA(28)": 0.7191927732436475
+    },
+    "smooth": {
+      "ADIDA": 0.8548005037384749,
+      "Croston (classic)": 0.8542077003902834,
+      "Croston (optimised)": 0.8596169099585176,
+      "IMAPA": 0.8551022181426686,
+      "SBA": 0.8510963373422729,
+      "SES (alpha per series)": 0.8528010417715295,
+      "Seasonal naive (7)": 1.0674370183810589,
+      "TSB": 0.8496345142149258,
+      "Weekday profile x MA(28)": 0.8482707635568679
+    }
+  }
+}

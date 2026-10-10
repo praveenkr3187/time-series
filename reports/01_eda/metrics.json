@@ -1,0 +1,29 @@
+{
+  "n_series": 30490,
+  "n_days": 1969,
+  "zero_share_last_year": 0.588233015989972,
+  "intermittency_classes": {
+    "intermittent": 22852,
+    "lumpy": 3587,
+    "smooth": 3312,
+    "erratic": 739
+  },
+  "weekend_uplift": 0.3372077941894531,
+  "snap_lift": {
+    "CA": {
+      "FOODS": 0.08885061740875244,
+      "HOBBIES": 0.04391276836395264,
+      "HOUSEHOLD": 0.042269229888916016
+    },
+    "TX": {
+      "FOODS": 0.14473187923431396,
+      "HOBBIES": 0.028586506843566895,
+      "HOUSEHOLD": 0.03543436527252197
+    },
+    "WI": {
+      "FOODS": 0.2949427366256714,
+      "HOBBIES": 0.01907956600189209,
+      "HOUSEHOLD": 0.037789344787597656
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "structural_checks": {
+    "calendar has no gaps": true,
+    "one row per item x store": true,
+    "no negative sales": true,
+    "no sales without a shelf price": true,
+    "all prices > 0": true,
+    "item belongs to exactly one dept": true,
+    "store belongs to exactly one state": true
+  },
+  "store_closure_days": 52,
+  "christmas_closures": 50,
+  "stockout_share_of_on_shelf_days": 0.013505683323001037,
+  "not_ranged_share": 0.12241182255423616,
+  "series_with_stockout": 0.5444735979009512,
+  "validation_scenarios": {
+    "clean file": "WARN",
+    "500 rows loaded twice": "BLOCK",
+    "returns netted as negative units": "BLOCK",
+    "store TX_2 missing": "BLOCK",
+    "WI_1 partial upload (30% of rows' units)": "BLOCK",
+    "5 fat-finger quantities (900 units)": "WARN",
+    "30 prices in cents instead of dollars": "WARN",
+    "yesterday's file re-sent": "BLOCK",
+    "3 unknown new items": "WARN"
+  }
+}

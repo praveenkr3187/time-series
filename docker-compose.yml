@@ -1,0 +1,34 @@
+# Serving stack: forecast API + planner dashboard + nightly scheduler.
+# Prerequisite: the offline pipelines have produced ./artifacts (`make all`).
+#
+#   docker compose up -d                                   # api :8000, dashboard :8501, scheduler
+#   docker compose logs -f scheduler
+#
+# The scheduler runs in demo mode: it lands the next day's POS file and runs one nightly job per minute,
+# continuing from wherever the curated history ends. Use `--at 02:00` for a real daily schedule.
+x-app: &app
+  build: .
+  image: forecastlab:latest
+  volumes:
+    - ./artifacts:/app/artifacts
+  environment:
+    ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+
+services:
+  api:
+    <<: *app
+    ports: ["8000:8000"]
+    command: ["uvicorn", "forecastlab.serving.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+
+  dashboard:
+    <<: *app
+    ports: ["8501:8501"]
+    command: ["streamlit", "run", "src/forecastlab/dashboard/app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+
+  scheduler:
+    <<: *app
+    command: ["python", "-m", "forecastlab.serving.scheduler", "--demo-seconds", "60"]
+    restart: on-failure

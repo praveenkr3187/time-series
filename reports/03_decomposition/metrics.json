@@ -1,0 +1,122 @@
+{
+  "variance_shares_total": {
+    "trend + yearly": 0.2252169116365659,
+    "weekly": 0.7286219390834918,
+    "remainder": 0.13249777622266376
+  },
+  "stationarity": [
+    {
+      "series": "total",
+      "transform": "level",
+      "ADF p (H0: unit root)": 0.10514352676228822,
+      "KPSS p (H0: stationary)": 0.01,
+      "verdict": "non-stationary"
+    },
+    {
+      "series": "total",
+      "transform": "first difference",
+      "ADF p (H0: unit root)": 8.838439247002576e-26,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "total",
+      "transform": "seasonal difference (7)",
+      "ADF p (H0: unit root)": 3.1310322546964424e-29,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "total",
+      "transform": "log, seasonal difference",
+      "ADF p (H0: unit root)": 0.0,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store CA_3",
+      "transform": "level",
+      "ADF p (H0: unit root)": 0.003746063363772643,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store CA_3",
+      "transform": "first difference",
+      "ADF p (H0: unit root)": 4.87997473656152e-25,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store CA_3",
+      "transform": "seasonal difference (7)",
+      "ADF p (H0: unit root)": 6.019367729662835e-29,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store CA_3",
+      "transform": "log, seasonal difference",
+      "ADF p (H0: unit root)": 0.0,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store x dept TX_2/FOODS_3",
+      "transform": "level",
+      "ADF p (H0: unit root)": 0.12068142123670517,
+      "KPSS p (H0: stationary)": 0.01,
+      "verdict": "non-stationary"
+    },
+    {
+      "series": "store x dept TX_2/FOODS_3",
+      "transform": "first difference",
+      "ADF p (H0: unit root)": 3.7570766517183235e-25,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store x dept TX_2/FOODS_3",
+      "transform": "seasonal difference (7)",
+      "ADF p (H0: unit root)": 2.5785755565555789e-26,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store x dept TX_2/FOODS_3",
+      "transform": "log, seasonal difference",
+      "ADF p (H0: unit root)": 0.0,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store x dept WI_1/HOBBIES_2",
+      "transform": "level",
+      "ADF p (H0: unit root)": 0.009936580667882776,
+      "KPSS p (H0: stationary)": 0.01,
+      "verdict": "inconclusive"
+    },
+    {
+      "series": "store x dept WI_1/HOBBIES_2",
+      "transform": "first difference",
+      "ADF p (H0: unit root)": 2.676134928149386e-16,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store x dept WI_1/HOBBIES_2",
+      "transform": "seasonal difference (7)",
+      "ADF p (H0: unit root)": 7.432890860915202e-14,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    },
+    {
+      "series": "store x dept WI_1/HOBBIES_2",
+      "transform": "log, seasonal difference",
+      "ADF p (H0: unit root)": 0.0,
+      "KPSS p (H0: stationary)": 0.1,
+      "verdict": "stationary"
+    }
+  ],
+  "item_median_lag7_acf": 0.07605258734373094
+}

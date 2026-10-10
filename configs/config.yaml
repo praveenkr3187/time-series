@@ -1,0 +1,60 @@
+# Central configuration for the demand forecasting platform.
+paths:
+  raw_dir: m5-forecasting
+  artifacts_dir: artifacts
+  reports_dir: reports
+
+data:
+  # M5: 30,490 item x store daily series, Walmart (CA, TX, WI), 2011-01-29 .. 2016-06-19 (1,969 days).
+  # The days from model_start onwards are used for training; earlier history is kept for EDA and scaling.
+  model_start: "2014-01-01"
+
+forecast:
+  horizon: 28                  # days ahead produced by every nightly run (M5 standard)
+  season_length: 7             # weekly cycle
+  quantiles: [0.1, 0.5, 0.9]   # P10 / P50 / P90 served to planners
+
+# Time-based evaluation. Every date is the LAST day of training data ("forecast origin").
+# Each test window is the `horizon` days that follow its origin.
+validation:
+  backtest_origins: ["2016-01-31", "2016-02-28", "2016-03-27"]   # walk-forward model selection
+  holdout_origin: "2016-05-22"                                   # M5 evaluation window 2016-05-23 .. 2016-06-19
+  production_start: "2016-04-25"                                 # nightly batch simulation starts here
+
+sample:
+  # Per-series statistical / deep models cannot be fitted on all 30,490 series on a laptop in reasonable time.
+  # They are compared on a stratified sample (same sample for every model) plus the aggregate levels.
+  n_series: 500
+  history_days: 365         # per-series models are fitted on the last year before each origin
+  random_state: 42
+
+business:
+  currency: USD
+  # Inventory simulation (Phase 17): daily review, order-up-to policy, fixed replenishment lead time.
+  lead_time_days: 2
+  holding_cost_rate: 0.25        # annual holding cost as a share of unit price
+  stockout_margin_rate: 0.30     # lost gross margin per unit of unmet demand, as a share of unit price
+  target_service_quantile: 0.9
+
+model:
+  random_state: 42
+  lgbm:
+    objective: tweedie
+    tweedie_variance_power: 1.1
+    n_estimators: 800
+    learning_rate: 0.06
+    num_leaves: 255
+    min_child_samples: 100
+    subsample: 0.7
+    subsample_freq: 1
+    colsample_bytree: 0.7
+    reg_lambda: 0.1
+    max_bin: 127
+
+monitoring:
+  wape_alert: 0.08             # alert if weekly store-level WAPE degrades by more than this (absolute) vs backtest
+  bias_alert: 0.05             # alert if |mean forecast / mean actual - 1| exceeds this for a week
+  psi_alert: 0.2
+
+serving:
+  forecast_db: artifacts/serving/forecasts.sqlite

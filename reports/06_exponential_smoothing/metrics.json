@@ -1,0 +1,172 @@
+{
+  "item_level": {
+    "AutoETS": {
+      "RMSSE (backtest)": 0.7395600166016324,
+      "RMSSE (holdout)": 0.7773731361928335,
+      "WAPE (backtest)": 0.7365849135714756,
+      "bias (backtest)": -0.014038538735882183
+    },
+    "Holt": {
+      "RMSSE (backtest)": 0.7480428822078989,
+      "RMSSE (holdout)": 0.7851054472181652,
+      "WAPE (backtest)": 0.7540184693537583,
+      "bias (backtest)": 0.008438172097852746
+    },
+    "Holt-Winters": {
+      "RMSSE (backtest)": 0.7463937276138141,
+      "RMSSE (holdout)": 0.785315842385871,
+      "WAPE (backtest)": 0.7434008610770576,
+      "bias (backtest)": -0.012575511359124573
+    },
+    "SES": {
+      "RMSSE (backtest)": 0.7436101545897659,
+      "RMSSE (holdout)": 0.7800654859078492,
+      "WAPE (backtest)": 0.7493772418745107,
+      "bias (backtest)": 0.004617000236320084
+    },
+    "Seasonal naive (7)": {
+      "RMSSE (backtest)": 0.9630464960353818,
+      "RMSSE (holdout)": 1.0287703816449634,
+      "WAPE (backtest)": 0.8644415332812893,
+      "bias (backtest)": -0.055126199128060126
+    },
+    "Weekday profile x MA(28)": {
+      "RMSSE (backtest)": 0.7437410439281865,
+      "RMSSE (holdout)": 0.7887267548065836,
+      "WAPE (backtest)": 0.7324111381781866,
+      "bias (backtest)": -0.024718365297474693
+    }
+  },
+  "agg_store x dept": {
+    "AutoETS": {
+      "RMSSE (backtest)": 0.891014248861664,
+      "RMSSE (holdout)": 0.8142977468885417,
+      "WAPE (backtest)": 0.12740481163712514,
+      "bias (backtest)": -0.03520153681562019
+    },
+    "Holt": {
+      "RMSSE (backtest)": 1.164530702481719,
+      "RMSSE (holdout)": 1.0026423422638127,
+      "WAPE (backtest)": 0.19064291318154228,
+      "bias (backtest)": -0.005348583932248307
+    },
+    "Holt-Winters": {
+      "RMSSE (backtest)": 0.9068310922631531,
+      "RMSSE (holdout)": 0.8187249627426182,
+      "WAPE (backtest)": 0.13157457099127456,
+      "bias (backtest)": -0.03803101573872044
+    },
+    "SES": {
+      "RMSSE (backtest)": 1.2694617620881254,
+      "RMSSE (holdout)": 1.0920985878614367,
+      "WAPE (backtest)": 0.23129251783010338,
+      "bias (backtest)": 0.07364993723716635
+    },
+    "Seasonal naive (7)": {
+      "RMSSE (backtest)": 1.0713290309865153,
+      "RMSSE (holdout)": 1.0011209572456627,
+      "WAPE (backtest)": 0.1547272256764343,
+      "bias (backtest)": -0.06084766006340328
+    },
+    "Weekday profile x MA(28)": {
+      "RMSSE (backtest)": 0.8215447619499057,
+      "RMSSE (holdout)": 0.8318506277716338,
+      "WAPE (backtest)": 0.11647331117143316,
+      "bias (backtest)": -0.0255222405327309
+    },
+    "Weekday profile, bottom-up from items": {
+      "RMSSE (backtest)": 0.8243425124300042,
+      "RMSSE (holdout)": 0.8333462187518063,
+      "WAPE (backtest)": 0.11675793319325223,
+      "bias (backtest)": -0.02552226442855596
+    }
+  },
+  "agg_store": {
+    "AutoETS": {
+      "RMSSE (backtest)": 0.6807232602313406,
+      "RMSSE (holdout)": 0.6018841605181567,
+      "WAPE (backtest)": 0.08522840681113697,
+      "bias (backtest)": -0.03529345039613758
+    },
+    "Holt": {
+      "RMSSE (backtest)": 1.121329667021875,
+      "RMSSE (holdout)": 0.8919802668121711,
+      "WAPE (backtest)": 0.15134111899404853,
+      "bias (backtest)": -0.034839880084673897
+    },
+    "Holt-Winters": {
+      "RMSSE (backtest)": 0.6967694372940284,
+      "RMSSE (holdout)": 0.5940916855878983,
+      "WAPE (backtest)": 0.08714789816003614,
+      "bias (backtest)": -0.03913690143977936
+    },
+    "SES": {
+      "RMSSE (backtest)": 1.4169302087922977,
+      "RMSSE (holdout)": 1.3205014558734107,
+      "WAPE (backtest)": 0.21031622330338628,
+      "bias (backtest)": 0.09078086278347025
+    },
+    "Seasonal naive (7)": {
+      "RMSSE (backtest)": 0.867365948020501,
+      "RMSSE (holdout)": 0.7173906334033952,
+      "WAPE (backtest)": 0.11028466964784818,
+      "bias (backtest)": -0.06084766006340328
+    },
+    "Weekday profile x MA(28)": {
+      "RMSSE (backtest)": 0.6452936238047988,
+      "RMSSE (holdout)": 0.6112154684636073,
+      "WAPE (backtest)": 0.08230119688709521,
+      "bias (backtest)": -0.02552223693984775
+    },
+    "Weekday profile, bottom-up from items": {
+      "RMSSE (backtest)": 0.6515967635742487,
+      "RMSSE (holdout)": 0.6175651431818416,
+      "WAPE (backtest)": 0.08301019691670371,
+      "bias (backtest)": -0.025522275417696843
+    }
+  },
+  "agg_total": {
+    "AutoETS": {
+      "RMSSE (backtest)": 0.5120190681308259,
+      "RMSSE (holdout)": 0.5278474725147856,
+      "WAPE (backtest)": 0.057542330483109194,
+      "bias (backtest)": -0.023752857791130552
+    },
+    "Holt": {
+      "RMSSE (backtest)": 1.1801983861129017,
+      "RMSSE (holdout)": 0.8556457668530313,
+      "WAPE (backtest)": 0.13067000166238482,
+      "bias (backtest)": -0.0388013237389006
+    },
+    "Holt-Winters": {
+      "RMSSE (backtest)": 0.5277362856765424,
+      "RMSSE (holdout)": 0.4415050407181465,
+      "WAPE (backtest)": 0.057708716369805235,
+      "bias (backtest)": -0.01835927597754117
+    },
+    "SES": {
+      "RMSSE (backtest)": 1.7025182286014429,
+      "RMSSE (holdout)": 1.962414552720442,
+      "WAPE (backtest)": 0.2118707721972081,
+      "bias (backtest)": 0.17335507725466273
+    },
+    "Seasonal naive (7)": {
+      "RMSSE (backtest)": 0.7518889354705305,
+      "RMSSE (holdout)": 0.5600472315684492,
+      "WAPE (backtest)": 0.08683348930130513,
+      "bias (backtest)": -0.06084766006340328
+    },
+    "Weekday profile x MA(28)": {
+      "RMSSE (backtest)": 0.5449874008630824,
+      "RMSSE (holdout)": 0.4771451000394373,
+      "WAPE (backtest)": 0.06044510591840396,
+      "bias (backtest)": -0.02552218691454892
+    },
+    "Weekday profile, bottom-up from items": {
+      "RMSSE (backtest)": 0.5540856706825985,
+      "RMSSE (holdout)": 0.48711832732415017,
+      "WAPE (backtest)": 0.06115784831650888,
+      "bias (backtest)": -0.025522274330849953
+    }
+  }
+}
